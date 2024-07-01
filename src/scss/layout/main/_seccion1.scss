@@ -1,0 +1,25 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.seccion1{
+    height: 60vh; 
+    .seccion1-interna{
+        height: inherit;
+        #carouselExample{
+            height: inherit;
+            background-image: url('/build/img/fondo.webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .carousel-inner{
+                height: inherit;
+                backdrop-filter: blur(0px) saturate(180%);
+                -webkit-backdrop-filter: blur(0px) saturate(180%);
+                background-color: rgba(30, 54, 54, 0.66);
+                .carousel-item{
+                    height: inherit;
+                }
+            }
+        }
+    }
+}

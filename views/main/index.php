@@ -1,1 +1,1 @@
-<h1>Desde el index</h1>
+<?php include_once __DIR__ . '/seccion1.php' ?>
