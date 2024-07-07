@@ -1,0 +1,11 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.seccion7{
+    min-height: 50vh;
+    color: v.$azul-oscuro;
+    .seccion7-interna{
+
+    }
+}

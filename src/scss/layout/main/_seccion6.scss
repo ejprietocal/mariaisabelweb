@@ -1,0 +1,33 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.seccion6{
+    min-height: 50vh;
+    margin: 5rem 0;
+    padding: 5rem 0;
+    .seccion6-interna{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 0 3rem;
+        @include m.tablet{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item-seccion6{
+            min-height: 40rem;
+            padding: 2rem;
+        }
+        .item-1{
+            background-color: v.$azul-medio;
+            color: v.$blanco;
+        }
+        .item-2{
+            background-color: v.$azul-superclaro;
+            color: v.$azul-medio;
+        }
+        .item-3{
+            background-color: v.$azul-claro;
+            color: v.$azul-oscuro;
+        }
+    }
+}

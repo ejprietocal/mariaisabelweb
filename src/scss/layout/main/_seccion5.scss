@@ -1,0 +1,49 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.seccion5{
+    min-height: 50vh;
+    color: v.$azul-oscuro;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1094%26quot%3b)' fill='none'%3e%3cpath d='M750.4503022889841 358.31468711885634L871.0840361443115 304.60508839058906 817.3744374160442 183.97135453526158 696.7407035607168 237.68095326352886z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1303.3738512010855 450.6653560475808L1387.4059445966052 513.9880803643908 1450.7286689134153 429.95598696887123 1366.6965755178956 366.63326265206115z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1287.858370909522 258.2436695417497L1370.2849354315113 169.85200087353755 1199.4667022413098 175.81710501976022z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1010.5392879454308 382.139791832002L1048.4240614247142 325.9733053706698 945.2319449930742 297.2293883824107z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M458.8170358050043 190.2724129749185L409.4736547095072 84.45519073428432 303.65643246887294 133.79857182978148 352.99981356437013 239.61579407041566z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M773.7664974847744 109.946138598735L666.6009777345446 217.11165834896485 773.7664974847744 324.27717809919466 880.9320172350042 217.11165834896485z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M903.5073540679844 305.40746878973266L832.3226562519271 234.2227709736755 761.13795843587 305.40746878973266 832.3226562519271 376.5921666057898z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M83.75204630037682 204.07576926677137L-53.74809192198833 124.51521045863528-56.17166780361654 263.3617797263494z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M435.74398954970883 269.70804684033794L563.1874051865756 306.2518582195514 599.731216565789 178.80844258268468 472.2878009289223 142.2646312034712z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1257.4227490440828 278.655912003266L1298.747894144577 376.0118528562749 1424.1192328738432 265.3461647790291z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M689.9607956706527 494.07725303888225L640.9163181733121 458.4443543732624 611.9892089235526 549.8275199520831z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M644.5909585357059 109.2951621357218L549.8730836961566 119.25041193672268 612.1648958174326 256.3495992955461z' fill='rgba(30%2c 54%2c 54%2c 1)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1094'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .seccion5-interna{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: inherit;
+        gap: 1rem;
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .item-seccion5{
+            backdrop-filter: blur(1px) saturate(180%);
+            -webkit-backdrop-filter: blur(1px) saturate(180%);
+            background-color: rgba(30, 54, 54, 0.47);
+            height: fit-content;
+
+            .nombre-foto{
+                bottom: 0;
+                background-color: v.$blanco;
+                padding: 1rem;
+            }
+        }
+        .item-2{
+            backdrop-filter: blur(1px) saturate(180%);
+            -webkit-backdrop-filter: blur(1px) saturate(180%);
+            background-color: rgba(0, 222, 227, 0.47);
+            margin: 0;
+            min-height: inherit;
+            @include m.tablet{
+                margin-top: 8rem;
+                margin-left: -8rem;
+                
+            }
+            .imagen{
+                right: -37px;
+                top: -82px;
+            }
+        }
+    }
+}

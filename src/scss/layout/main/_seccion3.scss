@@ -1,0 +1,39 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.seccion3{
+    min-height: 50vh;
+    background: rgb(0,222,227);
+    background: linear-gradient(0deg, rgba(0,222,227,1) 0%, rgba(10,139,145,1) 100%);
+
+    .seccion3-interna{
+        min-height: inherit;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .seccion3-frase{
+
+        }
+        .seccion3-imagen{
+            background-image: url('/build/img/background2.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: inherit;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            @include m.tablet{
+                margin: .5rem 0;
+                position: unset;
+            }
+        }
+    }
+}

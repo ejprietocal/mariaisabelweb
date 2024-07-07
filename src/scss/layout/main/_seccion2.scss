@@ -1,0 +1,87 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.seccion2{
+    min-height: 60vh;
+    background-image: url('/build/img/seccion2back.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem !important;
+    .seccion2-interna{
+        .titulo-seccion{
+            color: v.$azul-oscuro;
+        }
+        .seccion2-servicios{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            @include m.tablet{
+                grid-template-columns: repeat(3,1fr);   
+            }
+            .servicio{
+                @include m.tablet{
+                    min-height: 30rem;
+                }
+                .contenedor-titulo{
+                    backdrop-filter: blur(0px) saturate(180%);
+                    -webkit-backdrop-filter: blur(0px) saturate(180%);
+                    background-color: rgba(0, 222, 227, 0.26);
+                    @include m.tablet{
+                        background-color: transparent;
+                    }
+                    .titulo-servicio{
+                        color: v.$azul-oscuro;
+                    }
+                }
+                .separador{
+                    display: none;
+                    @include m.tablet{
+                        display: block;
+                    }
+                }
+                .parrafo-servicio{
+                    height: 0;
+                    transition: v.$transition-04;
+                    overflow: hidden;
+                    margin: 0;
+                    backdrop-filter: blur(0px) saturate(180%);
+                    -webkit-backdrop-filter: blur(0px) saturate(180%);
+                    background-color: rgba(10, 139, 145, 0.64);
+                    text-align: justify;
+                    padding: 0;
+                    color: v.$blanco;
+                    @include m.tablet{
+                        background-color: transparent;
+                        height: fit-content;
+                        text-align: left;
+                        color: v.$azul-oscuro;
+                    }
+                }
+
+                .extend-parrafo{
+                    height: 14rem;
+                    padding: 1rem;
+                    @include m.tablet{
+                        height: fit-content;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.boton-comunicate{
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: block;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: lighten(v.$verde, 15%);
+    border-radius: 1rem;
+    color: v.$azul-oscuro;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
