@@ -1,2 +1,103 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
+
+
+.header{    
+    background-color: darken(v.$azul-claro, 10%);
+    height: v.$height-size;
+}
+
+.auxiliar-size{
+    height: v.$height-size;
+}
+
+.hamburguer{
+    width: 4rem;
+    height: 4rem;
+
+    position: relative;
+    cursor: pointer;
+
+
+    border: none;
+    background: transparent;
+    scale: .6;
+    span{
+        width: 100%;
+        height: .5rem;
+        background-color: v.$blanco;
+
+        display: block;
+        border-radius: .5rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: v.$transition-04;
+
+    }
+
+    .l1{
+        transform: translate(-50%,-1.5rem);
+    }
+    .l3{
+        transform: translate(-50%,1rem);
+    }
+}
+.activo{
+    .l1{
+        transform: translate(-50%,-50%)rotate(45deg);
+    }
+    .l3{
+        transform: translate(-50%,-50%)rotate(-45deg);
+    }
+    .l2{
+        width: 0;
+    }
+}
+
+.listado-opciones{
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    top: v.$height-size;
+    right: 0;
+    background-color: transparent;
+    height: calc(100vh - v.$height-size);
+    width: 0;
+    transition: v.$transition-04;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    @include m.tablet{
+        position: unset;
+        height: auto;
+        width: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+    li{
+        transition: v.$transition-04;
+        cursor: pointer;
+        margin: 0;
+    }
+}
+
+#logo-principal{
+    cursor: pointer;
+}
+
+.show-menu{
+    width: 60%;
+    padding-top: 1rem;
+    visibility: visible;
+    opacity: 1;
+    backdrop-filter: blur(.5px) saturate(180%);
+    -webkit-backdrop-filter: blur(.5px) saturate(180%);
+    background-color: rgba(10, 139, 145, 0.85);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    li{
+        margin-top: 3rem;
+    }
+}

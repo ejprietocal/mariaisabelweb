@@ -61,11 +61,22 @@
                 }
 
                 .extend-parrafo{
-                    height: 14rem;
+                    height: fit-content;
                     padding: 1rem;
                     @include m.tablet{
                         height: fit-content;
                         padding: 0;
+                    }
+                }
+
+                #otros-servicios{
+                    list-style-type: disc;
+                    padding: 0 3rem;
+                    font-size: 1.3rem !important;
+                    li{
+                        margin-bottom: .7rem;
+                        text-transform: capitalize;
+
                     }
                 }
             }

@@ -1,6 +1,6 @@
 <div class="seccion5 container-fluid p-0">
     <div class="seccion5-interna container p-0 pe-3 ps-3">
-        <div class="item-seccion5 item-1 position-relative">
+        <div class="item-seccion5 item-1 position-relative" style="width:64%; margin:0 auto;">
             <picture class="d-block text-center">
                 <source srcset="/build/img/foto.avif" type="image/avif">
                 <source srcset="/build/img/foto.webp" type="image/webp">
@@ -8,8 +8,8 @@
                 <img width="100%" src="/build/img/foto.png" alt="foto">
             </picture>
             <div class="nombre-foto position-absolute end-0">
-                <h3 class="display-5 fw-bold m-0">Maria Isabel Lopez</h3>
-                <p class="fs-3 m-0 fst-italic">Contadora Publica.</p>
+                <p class="fs-3 m-0 fst-italic">Contadora</p>
+                <h3 class="display-5 fw-bold m-0">Maria Isabel López</h3>
             </div>
         </div>
         <div class="item-seccion5 item-2 position-relative">

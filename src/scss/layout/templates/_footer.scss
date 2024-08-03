@@ -3,5 +3,26 @@
 
 .footer{
     min-height: 20rem;
-    background-color: v.$azul-oscuro;
+    background-color: darken(v.$azul-claro, 10%);
+    .footer-interno{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        @include m.tablet{
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .contenedor{
+            p{
+                text-align: center;
+            }
+            .rotada{
+                rotate: 180deg;
+            }
+        }
+    }
+    a{
+        color: v.$blanco;
+        text-decoration: none;
+    }
 }

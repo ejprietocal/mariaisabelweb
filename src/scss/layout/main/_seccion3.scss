@@ -17,7 +17,13 @@
         }
 
         .seccion3-frase{
-
+            blockquote{
+                border-left: 4px solid #ccc;
+                padding-left: 10px;
+                margin: 10px 0;
+                font-style: italic;
+                color: #555;
+            }
         }
         .seccion3-imagen{
             background-image: url('/build/img/background2.webp');
