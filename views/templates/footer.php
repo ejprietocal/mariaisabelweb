@@ -10,7 +10,7 @@
         <div class="contenedor display-3 d-flex flex-column justify-content-center gap-5 fs-2 p-5">
             <a target="_blank" href="https://api.whatsapp.com/send?phone=+573022954945&text=Me%20interesa%20saber%20de%20los%20servicios%20contables"><i class="bi bi-whatsapp display-4"></i> +57 302 295 4945</a>
             <a href="mailto:contadoramariaisabellopez@gmail.com"><i class="bi bi-envelope display-4"></i> contadoramariaisabellopez@gmail.com</a>
-            <a target="_blank" href="https://www.instagram.com/contadoresvup?igsh=bDV5bzlsbjhqeGM0"><i class="bi bi-instagram display-4"></i> @contadoresvup</a>
+            <a target="_blank" href="https://www.instagram.com/contadoramils/?igsh=cXB4bHlkNG8wd2gz"><i class="bi bi-instagram display-4"></i> @contadoramils</a>
             <div class="text-white fw-bold">
                 <p>Valledupar, Cesar / Colombia </p>
             </div>

@@ -2,10 +2,10 @@
     <div class="seccion5-interna container p-0 pe-3 ps-3">
         <div class="item-seccion5 item-1 position-relative" style="width:64%; margin:0 auto;">
             <picture class="d-block text-center">
-                <source srcset="/build/img/foto.avif" type="image/avif">
-                <source srcset="/build/img/foto.webp" type="image/webp">
+                <source srcset="/build/img/contadora_sin_fondo.avif" type="image/avif">
+                <source srcset="/build/img/contadora_sin_fondo.webp" type="image/webp">
             
-                <img width="100%" src="/build/img/foto.png" alt="foto">
+                <img width="100%" src="/build/img/contadora_sin_fondo.jpg" alt="foto">
             </picture>
             <div class="nombre-foto position-absolute end-0">
                 <p class="fs-3 m-0 fst-italic">Contadora</p>
