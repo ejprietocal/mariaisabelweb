@@ -5,7 +5,7 @@
                 <source srcset="/build/img/contadora_sin_fondo.avif" type="image/avif">
                 <source srcset="/build/img/contadora_sin_fondo.webp" type="image/webp">
             
-                <img width="100%" src="/build/img/contadora_sin_fondo.jpg" alt="foto">
+                <img width="100%" src="/build/img/contadora_sin_fondo.png" alt="foto">
             </picture>
             <div class="nombre-foto position-absolute end-0">
                 <p class="fs-3 m-0 fst-italic">Contadora</p>
